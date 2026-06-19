@@ -21,6 +21,12 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
+    - name: Fix Missing Keystore Error
+      run: |
+        if [ -f app/build.gradle.kts ]; then
+          sed -i '/signingConfig = signingConfigs.getByName("debugConfig")/d' app/build.gradle.kts
+        fi
+
     - name: Build with Global Gradle
       run: gradle assembleDebug
 
