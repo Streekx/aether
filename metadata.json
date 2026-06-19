@@ -1,0 +1,6 @@
+{
+  "name": "Aether",
+  "description": "A premium, futuristic dark-themed social messaging platform with secure real-time chats, video/voice calls, and stories styled in obsidian and royal purple.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
